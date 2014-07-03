@@ -1,0 +1,65 @@
+﻿Build started 6/27/2014 1:38:42 PM.
+     1>Project "D:\MyProject\VideoCollage_2012\VideoAnalysis\VideoAnalysis.vcxproj" on node 4 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\inc\msxml /I..\..\inc /I..\inc\mhl /I..\inc\log /I..\inc\wmsdk /I..\inc\dshow /I..\inc\cv /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _LIB /D VIDEOANALYSIS_EXPORTS /D _UNICODE /D UNICODE /Gm /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"..\lib\VideoAnalysis.pdb" /Gd /TP /analyze- /errorReport:prompt AffineGlobalMotionEstimation.cpp AffineOffineSubshotDetector.cpp CommonFrameFeatureFactory.cpp DThreshShotDetector.cpp EntropyOfflineSceneDetector.cpp FrameFeatureExtractor.cpp GraphHelper.cpp KeyframeSaver.cpp OpenCVHelper.cpp SabOnlineSubshotDetector.cpp SimpleKeyframeExtractor.cpp SimpleThumbNailExtractor.cpp stdafx.cpp VaUtils.cpp VideoAnalysisEngine.cpp VideoAnalysisException.cpp VideoEditService.cpp VideoParseBase.cpp VideoParseFilter.cpp VideoParseFilterImp.cpp VideoSegments.cpp VideoSegmentStorage.cpp XMLAccessHelper.cpp
+         XMLAccessHelper.cpp
+         VideoSegmentStorage.cpp
+         VideoSegments.cpp
+         VideoParseFilterImp.cpp
+         VideoParseFilter.cpp
+         VideoParseBase.cpp
+         VideoEditService.cpp
+         VideoAnalysisException.cpp
+         VideoAnalysisEngine.cpp
+         VaUtils.cpp
+         stdafx.cpp
+         SimpleThumbNailExtractor.cpp
+         SimpleKeyframeExtractor.cpp
+         SabOnlineSubshotDetector.cpp
+         OpenCVHelper.cpp
+     1>d:\myproject\videocollage_2012\inc\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+         KeyframeSaver.cpp
+         GraphHelper.cpp
+         FrameFeatureExtractor.cpp
+         EntropyOfflineSceneDetector.cpp
+         DThreshShotDetector.cpp
+         Compiling...
+         CommonFrameFeatureFactory.cpp
+         AffineOffineSubshotDetector.cpp
+     1>d:\myproject\videocollage_2012\inc\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+         AffineGlobalMotionEstimation.cpp
+     1>d:\myproject\videocollage_2012\inc\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(218) : see declaration of 'fopen'
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"..\lib\VideoAnalysis.lib" mhl.lib strmbase.lib winmm.lib VxCore.lib comsuppw.lib msxml6.lib /LIBPATH:..\lib /NOLOGO /LTCG Release\AffineGlobalMotionEstimation.obj
+         Release\AffineOffineSubshotDetector.obj
+         Release\CommonFrameFeatureFactory.obj
+         Release\DThreshShotDetector.obj
+         Release\EntropyOfflineSceneDetector.obj
+         Release\FrameFeatureExtractor.obj
+         Release\GraphHelper.obj
+         Release\KeyframeSaver.obj
+         Release\OpenCVHelper.obj
+         Release\SabOnlineSubshotDetector.obj
+         Release\SimpleKeyframeExtractor.obj
+         Release\SimpleThumbNailExtractor.obj
+         Release\stdafx.obj
+         Release\VaUtils.obj
+         Release\VideoAnalysisEngine.obj
+         Release\VideoAnalysisException.obj
+         Release\VideoEditService.obj
+         Release\VideoParseBase.obj
+         Release\VideoParseFilter.obj
+         Release\VideoParseFilterImp.obj
+         Release\VideoSegments.obj
+         Release\VideoSegmentStorage.obj
+         Release\XMLAccessHelper.obj
+         Replacing Release\stdafx.obj
+         VideoAnalysis.vcxproj -> D:\MyProject\VideoCollage_2012\VideoAnalysis\..\lib\VideoAnalysis.lib
+     1>Done Building Project "D:\MyProject\VideoCollage_2012\VideoAnalysis\VideoAnalysis.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.78

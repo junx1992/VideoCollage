@@ -1,0 +1,26 @@
+﻿Build started 6/23/2014 11:26:30 AM.
+     1>Project "C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\VxCore\VxCore.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\..\inc /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Log.cpp SafeLog.cpp stdafx.cpp VxCoreException.cpp VxDataSet.cpp VxFeature.cpp VxUtils.cpp
+         VxUtils.cpp
+         VxFeature.cpp
+         VxDataSet.cpp
+         VxCoreException.cpp
+         stdafx.cpp
+         SafeLog.cpp
+         Log.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"..\lib\VxCore_d.lib" /NOLOGO Debug\Log.obj
+         Debug\SafeLog.obj
+         Debug\stdafx.obj
+         Debug\VxCoreException.obj
+         Debug\VxDataSet.obj
+         Debug\VxFeature.obj
+         Debug\VxUtils.obj
+         VxCore.vcxproj -> C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\VxCore\..\lib\VxCore_d.lib
+     1>Done Building Project "C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\VxCore\VxCore.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.86

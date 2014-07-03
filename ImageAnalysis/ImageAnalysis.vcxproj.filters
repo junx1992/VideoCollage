@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Basic Class">
+      <UniqueIdentifier>{391c4658-a424-44f9-8be5-766f5033bb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Externals">
+      <UniqueIdentifier>{205772d2-27ef-42cf-bdef-fbad551b62a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Feature Extractors">
+      <UniqueIdentifier>{1373921f-2e3f-465c-8894-84d45b7c1c02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Class">
+      <UniqueIdentifier>{4269242d-e7c2-4601-97a8-75d4730c8f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageSegmentation">
+      <UniqueIdentifier>{dc9657c5-456c-4cc7-9fa9-f4b3319bd3a7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GdiplusLife.cpp">
+      <Filter>Basic Class</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageAnalysisException.cpp">
+      <Filter>Basic Class</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageAnalysisHelper.cpp">
+      <Filter>Basic Class</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Basic Class</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureExtractorHelper\Canny.cpp">
+      <Filter>Externals</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureExtractorHelper\FeatureExtractorHelper.cpp">
+      <Filter>Externals</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureExtractorHelper\GrayShow.cpp">
+      <Filter>Externals</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureExtractorHelper\nrutil.cpp">
+      <Filter>Externals</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureExtractorComInc\FeatureExtractor_i.c">
+      <Filter>Externals</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorHistogramFeatureExtractor.cpp">
+      <Filter>Feature Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorMomentFeatureExtractor.cpp">
+      <Filter>Feature Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="CorrelogramFeatureExtractor.cpp">
+      <Filter>Feature Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeFeatureExtractor.cpp">
+      <Filter>Feature Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceFeatureExtractor.cpp">
+      <Filter>Feature Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureExtractorBase.cpp">
+      <Filter>Feature Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeFeatureExtractor.cpp">
+      <Filter>Feature Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureFeatureExtractor.cpp">
+      <Filter>Feature Extractors</Filter>
+    </ClCompile>
+    <ClCompile Include="GrayImage.cpp">
+      <Filter>Image Class</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcess.cpp">
+      <Filter>Image Class</Filter>
+    </ClCompile>
+    <ClCompile Include="RgbImage.cpp">
+      <Filter>Image Class</Filter>
+    </ClCompile>
+    <ClCompile Include="JSeg.cpp">
+      <Filter>ImageSegmentation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Basic Class</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureExtractorHelper\Canny.h">
+      <Filter>Externals</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureExtractorHelper\FeatureExtractorHelper.h">
+      <Filter>Externals</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureExtractorHelper\GrayShow.h">
+      <Filter>Externals</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureExtractorHelper\nrutil.h">
+      <Filter>Externals</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureExtractorHelperUsingFECom.h">
+      <Filter>Feature Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\GdiplusLife.h">
+      <Filter>Basic Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\IImage.h">
+      <Filter>Basic Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\IImageFeatureExtractor.h">
+      <Filter>Basic Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\IImageSegmentation.h">
+      <Filter>Basic Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ImageAnalysisException.h">
+      <Filter>Basic Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ImageAnalysisHelper.h">
+      <Filter>Basic Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VxComm.h">
+      <Filter>Basic Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ColorHistogramFeatureExtractor.h">
+      <Filter>Feature Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ColorMomentFeatureExtractor.h">
+      <Filter>Feature Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\CorrelogramFeatureExtractor.h">
+      <Filter>Feature Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\EdgeFeatureExtractor.h">
+      <Filter>Feature Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\FaceFeatureExtractor.h">
+      <Filter>Feature Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\FeatureExtractorBase.h">
+      <Filter>Feature Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ShapeFeatureExtractor.h">
+      <Filter>Feature Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\TextureFeatureExtractor.h">
+      <Filter>Feature Extractors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\GrayImage.h">
+      <Filter>Image Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ImageProcess.h">
+      <Filter>Image Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\RgbImage.h">
+      <Filter>Image Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\JSeg.h">
+      <Filter>ImageSegmentation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

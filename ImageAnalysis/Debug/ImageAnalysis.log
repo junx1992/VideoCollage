@@ -1,0 +1,62 @@
+﻿Build started 6/23/2014 11:26:30 AM.
+     1>Project "C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\ImageAnalysis\ImageAnalysis.vcxproj" on node 4 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ColorHistogramFeatureExtractor.cpp ColorMomentFeatureExtractor.cpp CorrelogramFeatureExtractor.cpp EdgeFeatureExtractor.cpp FaceFeatureExtractor.cpp FeatureExtractorBase.cpp FeatureExtractorHelper\Canny.cpp FeatureExtractorHelper\FeatureExtractorHelper.cpp FeatureExtractorHelper\GrayShow.cpp FeatureExtractorHelper\nrutil.cpp GdiplusLife.cpp GrayImage.cpp ImageAnalysisException.cpp ImageAnalysisHelper.cpp ImageProcess.cpp JSeg.cpp RgbImage.cpp ShapeFeatureExtractor.cpp stdafx.cpp TextureFeatureExtractor.cpp
+         TextureFeatureExtractor.cpp
+         stdafx.cpp
+         ShapeFeatureExtractor.cpp
+         RgbImage.cpp
+         JSeg.cpp
+         ImageProcess.cpp
+         ImageAnalysisHelper.cpp
+         ImageAnalysisException.cpp
+         GrayImage.cpp
+         GdiplusLife.cpp
+         nrutil.cpp
+         GrayShow.cpp
+         FeatureExtractorHelper.cpp
+         Canny.cpp
+         FeatureExtractorBase.cpp
+         FaceFeatureExtractor.cpp
+         EdgeFeatureExtractor.cpp
+         CorrelogramFeatureExtractor.cpp
+         ColorMomentFeatureExtractor.cpp
+         ColorHistogramFeatureExtractor.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt FeatureExtractorComInc\FeatureExtractor_i.c
+         FeatureExtractor_i.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"..\lib\ImageAnalysis_d.lib" vtl.lib gdiplus.lib Gdi32.lib Comdlg32.lib faceDetectorDll.lib VxCore.lib jseg.lib /LIBPATH:..\lib /NOLOGO Debug\ColorHistogramFeatureExtractor.obj
+         Debug\ColorMomentFeatureExtractor.obj
+         Debug\CorrelogramFeatureExtractor.obj
+         Debug\EdgeFeatureExtractor.obj
+         Debug\FaceFeatureExtractor.obj
+         Debug\FeatureExtractorBase.obj
+         Debug\FeatureExtractor_i.obj
+         Debug\Canny.obj
+         Debug\FeatureExtractorHelper.obj
+         Debug\GrayShow.obj
+         Debug\nrutil.obj
+         Debug\GdiplusLife.obj
+         Debug\GrayImage.obj
+         Debug\ImageAnalysisException.obj
+         Debug\ImageAnalysisHelper.obj
+         Debug\ImageProcess.obj
+         Debug\JSeg.obj
+         Debug\RgbImage.obj
+         Debug\ShapeFeatureExtractor.obj
+         Debug\stdafx.obj
+         Debug\TextureFeatureExtractor.obj
+     1>vtl.lib(Img_Polygon.obj) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>Gdi32.lib(GDI32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in gdiplus.lib(gdiplus.dll); second definition ignored
+     1>Gdi32.lib(GDI32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>Comdlg32.lib(COMDLG32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in gdiplus.lib(gdiplus.dll); second definition ignored
+     1>Comdlg32.lib(COMDLG32.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>faceDetectorDll.lib(FaceDetectorDLL.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in gdiplus.lib(gdiplus.dll); second definition ignored
+     1>faceDetectorDll.lib(FaceDetectorDLL.dll) : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         ImageAnalysis.vcxproj -> C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\ImageAnalysis\..\lib\ImageAnalysis_d.lib
+     1>Done Building Project "C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\ImageAnalysis\ImageAnalysis.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.98

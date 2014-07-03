@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Exception">
+      <UniqueIdentifier>{869390de-8dd4-4f1e-8a08-64cd008221f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dataset">
+      <UniqueIdentifier>{9ce86411-7519-479b-b401-3db9d878472e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{ee836d10-5255-4dcc-95f0-08376af1d14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Log">
+      <UniqueIdentifier>{cdacc40b-5ba3-4944-a36a-6616cd33b2d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VxCoreException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="VxDataSet.cpp">
+      <Filter>Dataset</Filter>
+    </ClCompile>
+    <ClCompile Include="VxFeature.cpp">
+      <Filter>Dataset</Filter>
+    </ClCompile>
+    <ClCompile Include="VxUtils.cpp">
+      <Filter>Dataset</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeLog.cpp">
+      <Filter>Log</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeLog.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VxDataSet.h">
+      <Filter>Dataset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VxFeature.h">
+      <Filter>Dataset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VxFeatureHelper.h">
+      <Filter>Dataset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VxCoreException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VxUtils.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\Log.h">
+      <Filter>Log</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

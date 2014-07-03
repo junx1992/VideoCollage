@@ -1,0 +1,61 @@
+﻿Build started 6/23/2014 11:26:30 AM.
+     1>Project "C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\VideoAnalysis\VideoAnalysis.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\inc\msxml /I..\..\inc /I..\inc\mhl /I..\inc\log /I..\inc\wmsdk /I..\inc\dshow /I..\inc\cv /ZI /nologo /W3 /WX- /sdl- /Od /Oi /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _LIB /D VIDEOANALYSIS_EXPORTS /D _UNICODE /D UNICODE /Gm /EHsc /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"..\lib\VideoAnalysis_d.pdb" /Gd /TP /analyze- /errorReport:prompt AffineGlobalMotionEstimation.cpp AffineOffineSubshotDetector.cpp CommonFrameFeatureFactory.cpp DThreshShotDetector.cpp EntropyOfflineSceneDetector.cpp FrameFeatureExtractor.cpp GraphHelper.cpp KeyframeSaver.cpp OpenCVHelper.cpp SabOnlineSubshotDetector.cpp SimpleKeyframeExtractor.cpp SimpleThumbNailExtractor.cpp stdafx.cpp VaUtils.cpp VideoAnalysisEngine.cpp VideoAnalysisException.cpp VideoEditService.cpp VideoParseBase.cpp VideoParseFilter.cpp VideoParseFilterImp.cpp VideoSegments.cpp VideoSegmentStorage.cpp XMLAccessHelper.cpp
+         XMLAccessHelper.cpp
+         VideoSegmentStorage.cpp
+         VideoSegments.cpp
+         VideoParseFilterImp.cpp
+         VideoParseFilter.cpp
+         VideoParseBase.cpp
+         VideoEditService.cpp
+         VideoAnalysisException.cpp
+         VideoAnalysisEngine.cpp
+         VaUtils.cpp
+         stdafx.cpp
+         SimpleThumbNailExtractor.cpp
+         SimpleKeyframeExtractor.cpp
+         SabOnlineSubshotDetector.cpp
+         OpenCVHelper.cpp
+         KeyframeSaver.cpp
+         GraphHelper.cpp
+         FrameFeatureExtractor.cpp
+         EntropyOfflineSceneDetector.cpp
+         DThreshShotDetector.cpp
+         Generating Code...
+         Compiling...
+         CommonFrameFeatureFactory.cpp
+         AffineOffineSubshotDetector.cpp
+         AffineGlobalMotionEstimation.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"..\lib\VideoAnalysis_d.lib" mhl_d.lib strmbase.lib winmm.lib VxCore_d.lib comsuppw.lib msxml6.lib /LIBPATH:..\lib /NOLOGO /LTCG Debug\AffineGlobalMotionEstimation.obj
+         Debug\AffineOffineSubshotDetector.obj
+         Debug\CommonFrameFeatureFactory.obj
+         Debug\DThreshShotDetector.obj
+         Debug\EntropyOfflineSceneDetector.obj
+         Debug\FrameFeatureExtractor.obj
+         Debug\GraphHelper.obj
+         Debug\KeyframeSaver.obj
+         Debug\OpenCVHelper.obj
+         Debug\SabOnlineSubshotDetector.obj
+         Debug\SimpleKeyframeExtractor.obj
+         Debug\SimpleThumbNailExtractor.obj
+         Debug\stdafx.obj
+         Debug\VaUtils.obj
+         Debug\VideoAnalysisEngine.obj
+         Debug\VideoAnalysisException.obj
+         Debug\VideoEditService.obj
+         Debug\VideoParseBase.obj
+         Debug\VideoParseFilter.obj
+         Debug\VideoParseFilterImp.obj
+         Debug\VideoSegments.obj
+         Debug\VideoSegmentStorage.obj
+         Debug\XMLAccessHelper.obj
+         Replacing Debug\stdafx.obj
+         VideoAnalysis.vcxproj -> C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\VideoAnalysis\..\lib\VideoAnalysis_d.lib
+     1>Done Building Project "C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\VideoAnalysis\VideoAnalysis.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.02

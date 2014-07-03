@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E0C0F938-534C-4BDF-95CC-52439B6B788B}</ProjectGuid>
+    <RootNamespace>VideoAnalysis</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\lib\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>..\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\lib\</OutDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+    <IncludePath>C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2013\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>..\inc\msxml;..\..\inc;..\inc\mhl;..\inc\log;..\inc\wmsdk;..\inc\dshow;..\inc\cv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_LIB;VIDEOANALYSIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName)_d.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>mhl_d.lib;strmbase.lib;winmm.lib;VxCore_d.lib;comsuppw.lib;msxml6.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>..\inc\msxml;..\..\inc;..\inc\mhl;..\inc\log;..\inc\wmsdk;..\inc\dshow;..\inc\cv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_LIB;VIDEOANALYSIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>mhl.lib;strmbase.lib;winmm.lib;VxCore.lib;comsuppw.lib;msxml6.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AffineGlobalMotionEstimation.cpp" />
+    <ClCompile Include="AffineOffineSubshotDetector.cpp" />
+    <ClCompile Include="CommonFrameFeatureFactory.cpp" />
+    <ClCompile Include="DThreshShotDetector.cpp" />
+    <ClCompile Include="EntropyOfflineSceneDetector.cpp" />
+    <ClCompile Include="FrameFeatureExtractor.cpp" />
+    <ClCompile Include="GraphHelper.cpp" />
+    <ClCompile Include="KeyframeSaver.cpp" />
+    <ClCompile Include="OpenCVHelper.cpp" />
+    <ClCompile Include="SabOnlineSubshotDetector.cpp" />
+    <ClCompile Include="SimpleKeyframeExtractor.cpp" />
+    <ClCompile Include="SimpleThumbNailExtractor.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="VaUtils.cpp" />
+    <ClCompile Include="VideoAnalysisEngine.cpp" />
+    <ClCompile Include="VideoAnalysisException.cpp" />
+    <ClCompile Include="VideoEditService.cpp" />
+    <ClCompile Include="VideoParseBase.cpp" />
+    <ClCompile Include="VideoParseFilter.cpp" />
+    <ClCompile Include="VideoParseFilterImp.cpp" />
+    <ClCompile Include="VideoSegments.cpp" />
+    <ClCompile Include="VideoSegmentStorage.cpp" />
+    <ClCompile Include="XMLAccessHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\AffineGlobalMotionEstimation.h" />
+    <ClInclude Include="..\inc\AffineOffineSubShotDetector.h" />
+    <ClInclude Include="..\inc\CommonFrameFeatureFactory.h" />
+    <ClInclude Include="..\inc\EntropyOfflineSceneDetector.h" />
+    <ClInclude Include="..\inc\FrameFeatureExtractor.h" />
+    <ClInclude Include="..\inc\KeyframeSaver.h" />
+    <ClInclude Include="..\inc\SabOnlineSubshotDetector.h" />
+    <ClInclude Include="..\inc\SimpleThumbNailExtractor.h" />
+    <ClInclude Include="..\inc\VaUtils.h" />
+    <ClInclude Include="..\inc\VideoAnalysisEngine.h" />
+    <ClInclude Include="..\inc\VideoAnalysisException.h" />
+    <ClInclude Include="..\inc\VideoEditService.h" />
+    <ClInclude Include="..\inc\VideoParseBase.h" />
+    <ClInclude Include="..\inc\VideoParseFilter.h" />
+    <ClInclude Include="..\inc\VideoParseInterface.h" />
+    <ClInclude Include="..\inc\VideoSegments.h" />
+    <ClInclude Include="..\inc\VideoSegmentStorage.h" />
+    <ClInclude Include="..\inc\VxUtils.h" />
+    <ClInclude Include="DThreshShotDetector.h" />
+    <ClInclude Include="GraphHelper.h" />
+    <ClInclude Include="OpenCVHelper.h" />
+    <ClInclude Include="SimpleKeyframeExtractor.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="VideoAnalysisEngine.h" />
+    <ClInclude Include="VideoParseFilterImp.h" />
+    <ClInclude Include="VideoParseInterfaceForFilter.h" />
+    <ClInclude Include="XMLAccessHelper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

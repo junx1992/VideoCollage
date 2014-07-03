@@ -1,0 +1,99 @@
+﻿Build started 6/27/2014 1:39:02 PM.
+     1>Project "D:\MyProject\VideoCollage_2012\VideoCollage_2012\VideoCollage_2012.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _CRT_SECURE_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt AdvancedKeyframeExtractor.cpp ColorEntropyFeatureExtractor.cpp common.cpp CUser.cpp EnhanceImage.cpp FrameJSegmentor.cpp global.cpp GlobalFeatureExtract.cpp ImageFeature.cpp ShotFeatureExtractor.cpp SkinFeatureExtractor.cpp StructureFeatureExtract.cpp VideoCollage.cpp VideoInfoExtract.cpp
+         AdvancedKeyframeExtractor.cpp
+         ColorEntropyFeatureExtractor.cpp
+         common.cpp
+         CUser.cpp
+         EnhanceImage.cpp
+         FrameJSegmentor.cpp
+         global.cpp
+         GlobalFeatureExtract.cpp
+         ImageFeature.cpp
+         ShotFeatureExtractor.cpp
+     1>ShotFeatureExtractor.cpp(99): warning C4172: returning address of local variable or temporary
+     1>ShotFeatureExtractor.cpp(140): warning C4018: '>' : signed/unsigned mismatch
+         SkinFeatureExtractor.cpp
+     1>d:\myproject\videocollage_2012\inc\skin\segment\imconv.h(84): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>d:\myproject\videocollage_2012\inc\skin\segment\filter.h(58): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         StructureFeatureExtract.cpp
+         VideoCollage.cpp
+     1>VideoCollage.cpp(23): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>VideoCollage.cpp(24): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>VideoCollage.cpp(25): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>VideoCollage.cpp(26): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>VideoCollage.cpp(27): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>VideoCollage.cpp(28): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>VideoCollage.cpp(29): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>VideoCollage.cpp(233): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>VideoCollage.cpp(234): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>VideoCollage.cpp(235): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>VideoCollage.cpp(236): warning C4244: '*=' : conversion from 'double' to 'int', possible loss of data
+     1>VideoCollage.cpp(387): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>VideoCollage.cpp(459): warning C4018: '<' : signed/unsigned mismatch
+     1>VideoCollage.cpp(462): warning C4244: '*=' : conversion from 'float' to 'LONG', possible loss of data
+     1>VideoCollage.cpp(463): warning C4244: '*=' : conversion from 'float' to 'LONG', possible loss of data
+     1>VideoCollage.cpp(465): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+     1>VideoCollage.cpp(502): warning C4018: '<' : signed/unsigned mismatch
+     1>VideoCollage.cpp(505): warning C4244: '*=' : conversion from 'float' to 'LONG', possible loss of data
+     1>VideoCollage.cpp(506): warning C4244: '*=' : conversion from 'float' to 'LONG', possible loss of data
+     1>VideoCollage.cpp(508): warning C4244: '=' : conversion from 'float' to 'LONG', possible loss of data
+     1>VideoCollage.cpp(434): warning C4101: 'rect' : unreferenced local variable
+     1>VideoCollage.cpp(703): warning C4018: '<' : signed/unsigned mismatch
+     1>VideoCollage.cpp(732): warning C4018: '<' : signed/unsigned mismatch
+     1>VideoCollage.cpp(764): warning C4018: '<' : signed/unsigned mismatch
+     1>VideoCollage.cpp(792): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>VideoCollage.cpp(826): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>VideoCollage.cpp(827): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>VideoCollage.cpp(834): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(837): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(839): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(844): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(846): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(848): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(865): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>VideoCollage.cpp(901): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>VideoCollage.cpp(902): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>VideoCollage.cpp(907): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(910): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(912): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(918): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(921): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(924): warning C4244: '=' : conversion from 'float' to 'BYTE', possible loss of data
+     1>VideoCollage.cpp(1028): warning C4018: '<' : signed/unsigned mismatch
+     1>VideoCollage.cpp(1071): warning C4018: '<' : signed/unsigned mismatch
+     1>VideoCollage.cpp(1368): warning C4018: '<' : signed/unsigned mismatch
+     1>VideoCollage.cpp(1553): warning C4101: 'video_height' : unreferenced local variable
+     1>VideoCollage.cpp(1553): warning C4101: 'video_width' : unreferenced local variable
+         VideoInfoExtract.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\MyProject\VideoCollage_2012\Release\VideoCollage_2012.exe" /INCREMENTAL:NO /NOLOGO FocusDetector.lib VideoAnalysis.lib VxCore.lib ImageAnalysis.lib opencv_core249.lib opencv_highgui249.lib opencv_imgproc249.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\MyProject\VideoCollage_2012\Release\VideoCollage_2012.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\MyProject\VideoCollage_2012\Release\VideoCollage_2012.lib" /MACHINE:X86 /SAFESEH Release\AdvancedKeyframeExtractor.obj
+         Release\ColorEntropyFeatureExtractor.obj
+         Release\common.obj
+         Release\CUser.obj
+         Release\EnhanceImage.obj
+         Release\FrameJSegmentor.obj
+         Release\global.obj
+         Release\GlobalFeatureExtract.obj
+         Release\ImageFeature.obj
+         Release\ShotFeatureExtractor.obj
+         Release\SkinFeatureExtractor.obj
+         Release\StructureFeatureExtract.obj
+         Release\VideoCollage.obj
+         Release\VideoInfoExtract.obj
+         Generating code
+         Finished generating code
+     1>VideoAnalysis.lib(wxutil.obj) : warning LNK4099: PDB 'strmbase.pdb' was not found with 'VideoAnalysis.lib(wxutil.obj)' or at 'D:\MyProject\VideoCollage_2012\Release\strmbase.pdb'; linking object as if no debug info
+     1>VideoAnalysis.lib(wxlist.obj) : warning LNK4099: PDB 'strmbase.pdb' was not found with 'VideoAnalysis.lib(wxlist.obj)' or at 'D:\MyProject\VideoCollage_2012\Release\strmbase.pdb'; linking object as if no debug info
+     1>VideoAnalysis.lib(transip.obj) : warning LNK4099: PDB 'strmbase.pdb' was not found with 'VideoAnalysis.lib(transip.obj)' or at 'D:\MyProject\VideoCollage_2012\Release\strmbase.pdb'; linking object as if no debug info
+     1>VideoAnalysis.lib(transfrm.obj) : warning LNK4099: PDB 'strmbase.pdb' was not found with 'VideoAnalysis.lib(transfrm.obj)' or at 'D:\MyProject\VideoCollage_2012\Release\strmbase.pdb'; linking object as if no debug info
+     1>VideoAnalysis.lib(mtype.obj) : warning LNK4099: PDB 'strmbase.pdb' was not found with 'VideoAnalysis.lib(mtype.obj)' or at 'D:\MyProject\VideoCollage_2012\Release\strmbase.pdb'; linking object as if no debug info
+     1>VideoAnalysis.lib(combase.obj) : warning LNK4099: PDB 'strmbase.pdb' was not found with 'VideoAnalysis.lib(combase.obj)' or at 'D:\MyProject\VideoCollage_2012\Release\strmbase.pdb'; linking object as if no debug info
+     1>VideoAnalysis.lib(amfilter.obj) : warning LNK4099: PDB 'strmbase.pdb' was not found with 'VideoAnalysis.lib(amfilter.obj)' or at 'D:\MyProject\VideoCollage_2012\Release\strmbase.pdb'; linking object as if no debug info
+         VideoCollage_2012.vcxproj -> D:\MyProject\VideoCollage_2012\Release\VideoCollage_2012.exe
+     1>Done Building Project "D:\MyProject\VideoCollage_2012\VideoCollage_2012\VideoCollage_2012.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:14.01

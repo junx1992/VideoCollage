@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97290E61-8034-44DF-B23E-F18B56ECD8CD}</ProjectGuid>
+    <RootNamespace>ImageAnalysis</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\lib\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>..\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\inc\vtl;C:\Users\v-junfu\Documents\Visual Studio 2012\Projects\VideoCollage_2012\inc;$(IncludePath)</IncludePath>
+    <OutDir>..\lib\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>vtl.lib;gdiplus.lib;Gdi32.lib;Comdlg32.lib;faceDetectorDll.lib;VxCore.lib;jseg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_LIB;IMAGEANALYSIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\inc;..\inc\vtl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(OutDir)$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>vtl.lib;gdiplus.lib;Gdi32.lib;Comdlg32.lib;faceDetectorDll.lib;VxCore.lib;jseg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ColorHistogramFeatureExtractor.cpp" />
+    <ClCompile Include="ColorMomentFeatureExtractor.cpp" />
+    <ClCompile Include="CorrelogramFeatureExtractor.cpp" />
+    <ClCompile Include="EdgeFeatureExtractor.cpp" />
+    <ClCompile Include="FaceFeatureExtractor.cpp" />
+    <ClCompile Include="FeatureExtractorBase.cpp" />
+    <ClCompile Include="FeatureExtractorComInc\FeatureExtractor_i.c" />
+    <ClCompile Include="FeatureExtractorHelper\Canny.cpp" />
+    <ClCompile Include="FeatureExtractorHelper\FeatureExtractorHelper.cpp" />
+    <ClCompile Include="FeatureExtractorHelper\GrayShow.cpp" />
+    <ClCompile Include="FeatureExtractorHelper\nrutil.cpp" />
+    <ClCompile Include="GdiplusLife.cpp" />
+    <ClCompile Include="GrayImage.cpp" />
+    <ClCompile Include="ImageAnalysisException.cpp" />
+    <ClCompile Include="ImageAnalysisHelper.cpp" />
+    <ClCompile Include="ImageProcess.cpp" />
+    <ClCompile Include="JSeg.cpp" />
+    <ClCompile Include="RgbImage.cpp" />
+    <ClCompile Include="ShapeFeatureExtractor.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TextureFeatureExtractor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\ColorHistogramFeatureExtractor.h" />
+    <ClInclude Include="..\inc\ColorMomentFeatureExtractor.h" />
+    <ClInclude Include="..\inc\CorrelogramFeatureExtractor.h" />
+    <ClInclude Include="..\inc\EdgeFeatureExtractor.h" />
+    <ClInclude Include="..\inc\FaceFeatureExtractor.h" />
+    <ClInclude Include="..\inc\FeatureExtractorBase.h" />
+    <ClInclude Include="..\inc\GdiplusLife.h" />
+    <ClInclude Include="..\inc\GrayImage.h" />
+    <ClInclude Include="..\inc\IImage.h" />
+    <ClInclude Include="..\inc\IImageFeatureExtractor.h" />
+    <ClInclude Include="..\inc\IImageSegmentation.h" />
+    <ClInclude Include="..\inc\ImageAnalysisException.h" />
+    <ClInclude Include="..\inc\ImageAnalysisHelper.h" />
+    <ClInclude Include="..\inc\ImageProcess.h" />
+    <ClInclude Include="..\inc\JSeg.h" />
+    <ClInclude Include="..\inc\RgbImage.h" />
+    <ClInclude Include="..\inc\ShapeFeatureExtractor.h" />
+    <ClInclude Include="..\inc\TextureFeatureExtractor.h" />
+    <ClInclude Include="..\inc\VxComm.h" />
+    <ClInclude Include="FeatureExtractorHelperUsingFECom.h" />
+    <ClInclude Include="FeatureExtractorHelper\Canny.h" />
+    <ClInclude Include="FeatureExtractorHelper\FeatureExtractorHelper.h" />
+    <ClInclude Include="FeatureExtractorHelper\GrayShow.h" />
+    <ClInclude Include="FeatureExtractorHelper\nrutil.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

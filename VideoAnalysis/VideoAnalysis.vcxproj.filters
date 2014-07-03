@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Basics">
+      <UniqueIdentifier>{85aa25fb-457c-4998-a8cb-25dabc2a3dd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exception">
+      <UniqueIdentifier>{86643295-5779-4799-af2f-d4715c78e899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Code">
+      <UniqueIdentifier>{09ebc3cd-c83a-4e4d-91df-73fe84faa864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Metadata Extraction">
+      <UniqueIdentifier>{908c9c35-6ccb-4e34-9791-d44dee538578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serialize">
+      <UniqueIdentifier>{715fd9a6-e7d6-40b0-93c2-27cd362cdee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VideoAnalysisEngine">
+      <UniqueIdentifier>{91ce577e-b1f8-40d8-b496-7a9934d1b494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VideoParse Filter">
+      <UniqueIdentifier>{85fc33fa-d462-4715-84fd-9914a71ec76c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VideoParseBase.cpp">
+      <Filter>Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoSegments.cpp">
+      <Filter>Basics</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoAnalysisException.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Generated Code</Filter>
+    </ClCompile>
+    <ClCompile Include="AffineGlobalMotionEstimation.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="AffineOffineSubshotDetector.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonFrameFeatureFactory.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="DThreshShotDetector.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="EntropyOfflineSceneDetector.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameFeatureExtractor.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyframeSaver.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCVHelper.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="SabOnlineSubshotDetector.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleThumbNailExtractor.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoEditService.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoSegmentStorage.cpp">
+      <Filter>Serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLAccessHelper.cpp">
+      <Filter>Serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphHelper.cpp">
+      <Filter>VideoAnalysisEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="VaUtils.cpp">
+      <Filter>VideoAnalysisEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoAnalysisEngine.cpp">
+      <Filter>VideoAnalysisEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoParseFilter.cpp">
+      <Filter>VideoParse Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoParseFilterImp.cpp">
+      <Filter>VideoParse Filter</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleKeyframeExtractor.cpp">
+      <Filter>Metadata Extraction</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VideoParseInterfaceForFilter.h">
+      <Filter>Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Generated Code</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenCVHelper.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLAccessHelper.h">
+      <Filter>Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphHelper.h">
+      <Filter>VideoAnalysisEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoParseFilterImp.h">
+      <Filter>VideoParse Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleKeyframeExtractor.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="DThreshShotDetector.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VideoParseBase.h">
+      <Filter>Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VideoParseInterface.h">
+      <Filter>Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VideoSegments.h">
+      <Filter>Basics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VideoAnalysisException.h">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\AffineGlobalMotionEstimation.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\AffineOffineSubShotDetector.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\CommonFrameFeatureFactory.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\EntropyOfflineSceneDetector.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\FrameFeatureExtractor.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\KeyframeSaver.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\SabOnlineSubshotDetector.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\SimpleThumbNailExtractor.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VideoEditService.h">
+      <Filter>Metadata Extraction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VideoSegmentStorage.h">
+      <Filter>Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VideoAnalysisEngine.h">
+      <Filter>Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VxUtils.h">
+      <Filter>Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VaUtils.h">
+      <Filter>VideoAnalysisEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\VideoParseFilter.h">
+      <Filter>VideoParse Filter</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoAnalysisEngine.h">
+      <Filter>VideoAnalysisEngine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,177 @@
+// FeatureExtractor.idl : IDL source for FeatureExtractor.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (FeatureExtractor.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+typedef enum
+{
+	//Color histogram 
+	FTYPE_ColorHsvHistogram256		=	1,//length 256
+	FTYPE_ColorHsvHistogram64		=	2,//length 64
+
+	FTYPE_ColorLabHistogram256		=	3,//length 256
+	FTYPE_ColorLabHistogram64		=	4,//length 64
+
+	FTYPE_ColorLuvHistogram256		=	5,//length 256
+	FTYPE_ColorLuvHistogram64		=	6,//length 64
+
+	//Color moments 
+	FTYPE_ColorHsvMoment12			=	7,//length 6
+	FTYPE_ColorHsvMoment123			=	8,//length 9
+
+	FTYPE_ColorLabMoment12			=	9,//length 6
+	FTYPE_ColorLabMoment123			=	10,//length 9
+
+	FTYPE_ColorLuvMoment12			=	11,//length 6
+	FTYPE_ColorLuvMoment123			=	12,//length 9
+
+	//Color coherence vector
+	FTYPE_ColorHsvCoherence64		=	13,//length 128
+	FTYPE_ColorLabCoherence64		=	14,//length 128
+	FTYPE_ColorLuvCoherence64		=	15,//length 128
+	
+	//Tamura coarseness
+	FTYPE_CoarsenessValue			=	16,//length 1
+	FTYPE_CoarsenessVector			=	17,//length 10
+
+	//Tamura contrast
+	FTYPE_Contrast					=	18,//length 1
+
+	//Tamura directionality
+	FTYPE_Directionality			=	19,//length 8
+
+	//Wavlet texture feature
+	FTYPE_WaveletPwtTexture			=	20,//length 24
+	FTYPE_WaveletTwtTexture			=	21,//length 104
+
+	//Multi-resolution simultaneous auto-regressive model (MRSAR)
+	FTYPE_MRSAR						=	22,//length 15
+
+	//The FTYPE_MAX feature type is used to allocate a big enough memory
+	FTYPE_MAX						=	0,//length 257
+} IMAGE_FEATURE_TYPE;
+
+typedef enum
+{
+	norNULL =		       0x0000,
+	norHistogram =         0x0001,
+	norVectorLength =      0x0002,
+} NormalizeMethod;
+
+cpp_quote("#if 0 // This allows us to use BITMAPINFOHEADER in the IDL")
+	typedef int BITMAPINFOHEADER;
+cpp_quote("#else")
+	cpp_quote("#include \"wingdi.h\"")
+cpp_quote("#endif")
+
+/*==========================================================================*\
+
+	IFeatureExtractor: COM interface for the MSR feature extraction code.
+
+\*==========================================================================*/
+
+[
+	object,
+	uuid(1EC5837A-FC89-421B-89B9-0D0816CBAE0B),
+
+	helpstring("IFeatureExtractor Interface"),
+	pointer_default(unique)
+]
+interface IFeatureExtractor : IUnknown
+{
+	/*======================================================================*\
+
+		ContainDIB specifies a DIB whose features are to be extracted.
+		The object will hold on to this reference and release (but not
+		free) it in DeContainDIB.
+	
+	Arguments:
+	
+		[in] BITMAPINFOHEADER* pbmi
+			The DIB header
+
+		[in] BYTE* pbData
+			The DIB image data
+
+		[in] RECT* prc
+			The region of interest.  NULL for entire image.
+	
+	\*======================================================================*/
+
+	HRESULT ContainDIB([in] const BITMAPINFOHEADER* pbmi,
+				       [in] const BYTE* pbData,	
+				       [in] const RECT* prc);
+	
+	/*======================================================================*\
+		
+		DeContainDIB deletes any memory allocated during a prior ContainDIB
+		call.  It does not free the DIB data specified in ContainDIB.  This 
+		method is called by the object's FinalRelease and therefore doesn't 
+		have to be called explicitly.
+	
+	\*======================================================================*/
+	
+	HRESULT DeContainDIB();
+	
+	/*======================================================================*\
+		
+		Extracts a feature from the loaded image.
+	
+	Arguments:
+	
+		[in] IMAGE_FEATURE_TYPE ift
+			The feature to extract
+
+		[in] NormalizeMethod nor
+			Normalization method
+
+		[out] float* prFeatureBuffer
+			The buffer to receive the feature value
+	
+	\*======================================================================*/
+
+	HRESULT Extract([in] IMAGE_FEATURE_TYPE ift,
+					[in] NormalizeMethod nm,
+					[out] float* prFeatureBuffer);
+
+	/*======================================================================*\
+		
+		QueryFeatureLength returns the given feature's length, in the number 
+		of element, NOT in bytes.
+	
+	Arguments:
+	
+		[in] IMAGE_FEATURE_TYPE ift
+			The features whose length to retrieve
+		
+		[out] UINT* pcbLen;
+			The length of the feature
+	
+	\*======================================================================*/
+
+	HRESULT QueryFeatureLength(IMAGE_FEATURE_TYPE ift, UINT* pcbLen);
+};
+
+[
+	uuid(8458196A-2AB3-4873-A059-2A4895DE6673),
+	version(1.0),
+	helpstring("FeatureExtractor 1.0 Type Library")
+]
+library FEATUREEXTRACTORLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(85E6D07A-AD1F-4449-9F47-9304462E5932),
+		helpstring("ExtractorFeature Class")
+	]
+	coclass FeatureExtractor
+	{
+		[default] interface IFeatureExtractor;
+	};
+};
